@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f5e6d3;
+    background-image: 
+        linear-gradient(45deg, rgba(210, 180, 140, 0.1) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(210, 180, 140, 0.1) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(210, 180, 140, 0.1) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(210, 180, 140, 0.1) 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.logo-container {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+.iframe-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 600px;
+    transition: transform 0.3s ease;
+}
+
+.iframe-container:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .iframe-container {
+        padding: 1rem;
+    }
+} 
